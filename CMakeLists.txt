@@ -44,7 +44,7 @@ set(LIBRARY_SOURCES
 
 set(SOURCES
     src/main.cpp
-
+    src/projet.cpp
     # Libraries
     ${LIBRARY_SOURCES}
 )
@@ -81,7 +81,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
 
 # Executable
-add_executable(${PROJECT_NAME} ${TP} ${SOURCES})
+add_executable(${PROJECT_NAME} src/main.cpp ${SOURCES})
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${INCLUDES})
 target_link_libraries(${PROJECT_NAME} PUBLIC ${LIBRARIES})
