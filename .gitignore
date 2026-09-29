@@ -1,0 +1,8 @@
+.idea/
+.vscode/
+data/
+bin/
+build-debug/
+build-release/
+app_orbiter.txt
+orbiter.txt
