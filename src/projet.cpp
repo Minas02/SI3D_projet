@@ -37,7 +37,10 @@ int Projet::render() {
 	// }
 
 	Transform mvp = projection * view * model;
+	Transform mv = projection * view;
+
 	program_uniform(m_program, "mvpMatrix", mvp);
+	program_uniform(m_program, "mvMatrix", mvp);
 
 	draw(m_scene, model, view, projection);
 

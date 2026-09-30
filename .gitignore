@@ -6,3 +6,4 @@ build-debug/
 build-release/
 app_orbiter.txt
 orbiter.txt
+*.png
