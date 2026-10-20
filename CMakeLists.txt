@@ -6,6 +6,7 @@ project(SI3D)
 find_package(OpenGL REQUIRED)
 find_package(GLEW REQUIRED)
 find_package(SDL2 REQUIRED)
+find_package(OpenMP REQUIRED)
 
 
 # Sources, Includes & Libraries
@@ -61,6 +62,7 @@ set(LIBRARIES
     GLEW
     SDL2
     SDL2_image
+    OpenMP::OpenMP_CXX
 )
 
 # Compiler Options
